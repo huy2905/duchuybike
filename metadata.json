@@ -1,0 +1,6 @@
+{
+  "name": "VeloBiz - Quản Lý Cửa Hàng Xe Đạp & Trợ Lý AI",
+  "description": "Hệ thống quản lý bán hàng (POS), quản lý kho xe đạp theo số khung, dịch vụ bảo dưỡng và trợ lý AI tra cứu kinh doanh thông minh cho cửa hàng xe đạp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
