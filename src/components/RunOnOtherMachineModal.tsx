@@ -57,9 +57,9 @@ export const RunOnOtherMachineModal: React.FC<Props> = ({
     },
     {
       title: 'Bước 6: Tạo Icon ngoài Màn hình Desktop để bấm 1 click là chạy như App bình thường',
-      desc: 'Để không cần gõ lệnh mỗi ngày, bạn tạo 1 file tên Chay-App-Duc-Huy.bat để ở Desktop máy tính:',
-      command: '@echo off\ncd /d "%~dp0"\nstart http://localhost:3000\nnpm run dev',
-      note: 'Mỗi lần cần bán hàng, bạn chỉ cần nhấp đúp chuột vào file này ngoài Desktop là app tự mở như phần mềm Word/Excel!'
+      desc: 'Trong thư mục mã nguồn đã có sẵn file Chay-App-Duc-Huy.bat (hoặc bạn tự tạo):',
+      command: '@echo off\ncd /d "%~dp0"\nstart "" cmd /c "timeout /t 3 /nobreak >nul & start http://localhost:3000"\nnpm run dev',
+      note: 'Khi nhấp đúp vào file này, máy chủ sẽ khởi động và sau 3 giây tự mở giao diện bán hàng. LƯU Ý: Giữ cửa sổ đen chạy ẩn dưới thanh Taskbar trong suốt buổi bán hàng, không bấm Ctrl+C (nếu bấm Ctrl+C là tắt máy chủ, web sẽ bị trắng).'
     },
     {
       title: 'Bước 7: Đồng bộ dữ liệu cửa hàng đã nhập sang máy mới',

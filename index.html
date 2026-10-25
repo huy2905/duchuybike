@@ -22,7 +22,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; color: #1e293b; text-align: center; padding: 24px;">
+        <div style="width: 60px; height: 60px; background-color: #2563eb; border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+          </svg>
+        </div>
+        <h2 style="font-size: 20px; font-weight: 800; margin: 0 0 8px 0; color: #0f172a;">Xe Đạp Thể Thao Đức Huy</h2>
+        <p style="font-size: 13px; color: #64748b; margin: 0 0 20px 0; max-width: 340px; line-height: 1.5;">Đang kết nối hệ thống quản lý bán hàng & dịch vụ...</p>
+        <div style="width: 28px; height: 28px; border: 3px solid #cbd5e1; border-top-color: #2563eb; border-radius: 50%; animation: dhspin 0.8s linear infinite;"></div>
+        <style>@keyframes dhspin { to { transform: rotate(360deg); } }</style>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
